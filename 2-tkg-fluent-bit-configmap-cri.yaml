@@ -35,7 +35,7 @@ data:
     [INPUT]
         Name                systemd
         Tag                 kube_systemd.*
-        Path                /var/log/journal
+        Path                /run/log/journal
         DB                  /var/log/flb_kube_systemd.db
         Systemd_Filter      _SYSTEMD_UNIT=kubelet.service
         Systemd_Filter      _SYSTEMD_UNIT=containerd.service
